@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	<body style = 'margin: 0px; overflow: hidden;'>
+		<a-scene embedded arjs = 'debugUIEnabled:false'>
+			<a-marker present = "hiro">
+				<a-box position="0 0.5 0" material = "color:#FF00FF;"></a-box>
+			</a-marker>
+			<a-marker present = "kanji">
+				<a-box position="0 0.5 0" material = "color:#A0522D;"></a-box>
+			</a-marker>
+			<a-marker type = "pattern" url= "pattern-xS7nfYFtyMoCed9OdtjdDOK7EosV1PJrT1Srr_fj7hqMllLmM_VrOKU4JiLP7X9SjVoy7yWK4iM4cnJhaRz73jUT.patt">
+				<a-box position="0 0.5 0" material = "color:#7B68EE;"></a-box>
+			</a-marker>
+			<a-entity camera></a-entity>
+		</a-scene>
+</html>
